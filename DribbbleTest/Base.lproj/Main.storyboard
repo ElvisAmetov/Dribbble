@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yPO-f4-2a9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Dribbble-->
+        <scene sceneID="AgY-30-R0X">
+            <objects>
+                <tableViewController id="grp-Mg-ngo" customClass="ShotsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9SS-Qd-1W2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="grp-Mg-ngo" id="Ss5-zR-iYn"/>
+                            <outlet property="delegate" destination="grp-Mg-ngo" id="w9V-gf-GTl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dribbble" id="1yr-h6-sos"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qe-g4-pmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TCR-Wa-uPH">
+            <objects>
+                <navigationController id="yPO-f4-2a9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FKJ-EJ-mTc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="grp-Mg-ngo" kind="relationship" relationship="rootViewController" id="AJk-ir-OjR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ExA-I4-9r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="608"/>
+        </scene>
+    </scenes>
+</document>

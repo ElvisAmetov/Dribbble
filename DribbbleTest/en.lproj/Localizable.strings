@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  DribbbleTest
+
+  Created by elvis on 24.07.16.
+  Copyright (c) 2016 elvis. All rights reserved.
+*/
+
+"The Internet connection appears to be offline." = "The Internet connection appears to be offline.";
+"Close" = "Close";
+"Error" = "Error";
